@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:text="Please enter a number of sorting"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvIntro"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="(from 1 to 10)"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvIntro"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="47dp"
+        android:background="#FFF000"
+        android:ems="10"
+        android:numeric="integer"
+        android:textSize="20sp"
+         />
+
+    <Button
+        android:id="@+id/btSelectSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etSize"
+        android:layout_alignBottom="@+id/etSize"
+        android:layout_toRightOf="@+id/etSize"
+        android:text="Button" />
+
+</RelativeLayout>
