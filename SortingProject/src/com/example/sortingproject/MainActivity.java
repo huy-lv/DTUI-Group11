@@ -3,6 +3,7 @@ package com.example.sortingproject;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -13,6 +14,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity implements OnClickListener{
 
 	Button btQuickSort,btSelectionSort,btInsertionSort;
+	Toolbar toolbar;
 	
 	
 	@Override
@@ -20,6 +22,9 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
+		toolbar = (Toolbar) findViewById(R.id.toolBar);
+        setSupportActionBar(toolbar);
+        
 		btQuickSort = (Button)findViewById(R.id.btQuickSort);
 		btSelectionSort = (Button)findViewById(R.id.btSelectionSort);
 		btInsertionSort = (Button)findViewById(R.id.btInsertionSort);

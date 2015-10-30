@@ -5,15 +5,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/tvIntro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="38dp"
-        android:text="Please enter a number of sorting"
-        android:textSize="20sp" />
+    <include
+        android:id="@+id/toolBar"
+        layout="@layout/toolbar" >
+    </include>
 
     <TextView
         android:id="@+id/textView2"
@@ -28,15 +23,15 @@
     <EditText
         android:id="@+id/etSize"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_alignLeft="@+id/tvIntro"
         android:layout_below="@+id/textView2"
         android:layout_marginTop="47dp"
-        android:background="#FFF000"
+        android:background="#FFFFFF"
+        android:textColor="#000000"
         android:ems="10"
         android:numeric="integer"
-        android:textSize="20sp"
-         />
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/btSelectSize"
@@ -45,6 +40,33 @@
         android:layout_alignBaseline="@+id/etSize"
         android:layout_alignBottom="@+id/etSize"
         android:layout_toRightOf="@+id/etSize"
-        android:text="Button" />
+        android:background="@color/button_color"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:text="OK" />
+
+    <TextView
+        android:id="@+id/tvAlgorithmName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Algorithm"
+                android:textStyle="bold"
+        
+        android:textColor="@color/algorithmName"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tvIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAlgorithmName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:text="ENTER A NUMBER OF SORTING"
+        android:textColor="@color/textColor"
+        android:textSize="20sp" />
 
 </RelativeLayout>
